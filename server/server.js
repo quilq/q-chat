@@ -1,5 +1,3 @@
-console.log('Server is running');
-
 const express = require('express');
 const http = require('http');
 const socketIO = require('socket.io');
