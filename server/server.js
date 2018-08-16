@@ -4,8 +4,8 @@ const socketIO = require('socket.io');
 const path = require('path');
 const moment = require('moment');
 
-const publicPath = path.join(__dirname + './../public');
-const port = process.env.port || 3000;
+const publicPath = path.join(__dirname + '/../public');
+const port = process.env.PORT || 3000;
 const app = express();
 const server = http.createServer(app);
 const io = socketIO(server);
