@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+form{
+    display: flex;
+    margin-bottom: 1%;
+}
+
+input{
+    width: 100%;
+    padding: 1%;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li:nth-child(4n+1), li:nth-child(4n+2){
+    background-color: aquamarine;
+}
+
+li:nth-child(2n+1){
+    color: lightgrey;
+}

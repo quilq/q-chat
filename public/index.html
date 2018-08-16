@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chat app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <h1>Qchat !</h1>
+        <ul class="message-content"></ul>
+    </div>
+
+    <form onsubmit="sendMessage(); return false">
+        <input type="text" name="message">
+        <button type="button" onclick="sendMessage()" autocomplete="off">Send</button>
+    </form>
+
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="index.js"> </script>
+
+</html>
