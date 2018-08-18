@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chat app</title>
+    <link rel="stylesheet" href="chat.css">
+    <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Qchat</h1>
+    </div>
+
+    <div class="message-content">
+        <ul></ul>
+    </div>
+
+    <div class="footer">
+        <form onsubmit="sendMessage(); return false">
+            <input type="text" name="message" autocomplete="off">
+            <button type="button" onclick="sendMessage()">Send</button>
+        </form>
+    </div>
+
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="chat.js"> </script>
+
+</html>

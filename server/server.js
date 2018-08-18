@@ -22,14 +22,14 @@ io.on('connection', (socket)=>{
     socket.emit('newMessage', {
         from: 'Admin',
         text: 'Welcome to the chat app',
-        createdAt: moment(new Date().getTime()).format('h:mm:ss a')
+        createdAt: moment(new Date().getTime()).format('h:mm a')
     });
 
     socket.on('createMessage', (message)=>{
         io.emit('newMessage', {
             from: message.from,
             text: message.text,
-            createdAt: moment(new Date().getTime()).format('h:mm:ss a')
+            createdAt: moment(new Date().getTime()).format('h:mm a')
         });
         console.log('Message created', message);
     });
@@ -37,7 +37,7 @@ io.on('connection', (socket)=>{
     socket.broadcast.emit('newMessage', {
         from: 'Admin',
         text: 'New user join',
-        createdAt: moment(new Date().getTime()).format('h:mm:ss a')
+        createdAt: moment(new Date().getTime()).format('h:mm a')
     });
 })
 

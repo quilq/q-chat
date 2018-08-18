@@ -1,36 +1,69 @@
-* {
-    box-sizing: border-box;
+*{
     margin: 0;
+    font-family: 'Dosis';
 }
 
-body {
+form {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(197, 228, 238);
+}
+
+form > div{
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
-    justify-content: space-between;
-    height: 100vh;
+    background-color: lightskyblue;
+    border-radius: 5%;
+    padding: 3% 1%;
 }
 
-form{
+h1{
+    margin: 3%;
+    text-align: center;
+}
+
+.username{
     display: flex;
-    margin-bottom: 1%;
+    flex-direction: column;
+    align-items: center;
+    margin: 6% 0%;
+}
+
+.chatroom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3% 0%;
 }
 
 input{
-    width: 100%;
-    padding: 1%;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(212, 230, 236);
+    padding: 2%;
+    margin: 1%;
 }
 
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+input:hover, input:focus{
+    background-color: white;
 }
 
-li:nth-child(4n+1), li:nth-child(4n+2){
-    background-color: aquamarine;
+span{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
 }
 
-li:nth-child(2n+1){
-    color: lightgrey;
+button{
+    border: none;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 3px;
+    padding: 0% 3%;
+}
+
+button:hover{
+    background-color: blue;
 }

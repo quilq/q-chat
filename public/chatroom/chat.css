@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Dosis';
+}
+
+/* Set body to full height */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header{
+    background-color: dodgerblue;
+}
+
+h1{
+    color: white;
+}
+
+.message-content{
+    flex: 1 1 auto; /*Fixed position for header & footer */
+    overflow: auto; /*Only add scrolling to this section */
+}
+
+form{
+    display: flex;
+    padding: 1% 0%;
+    background-color: lightblue;
+}
+
+form input {
+    flex-grow: 9;
+    padding-left: 1%;
+}
+  
+form button {
+    flex-grow: 1;
+    background-color: dodgerblue;
+    border-width: 0;
+    margin-left: 1%;
+    padding: 1% 0%;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    margin-top: 1%;
+    padding: 0;
+}
+
+li:nth-child(4n+1), li:nth-child(4n+2){
+    background-color: lightblue;
+}
+
+li:nth-child(2n+1){
+    color: black;
+}
+button{
+    color: white;
+}

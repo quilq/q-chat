@@ -5,23 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Chat app</title>
+    <title>Welcome to QChat </title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet'>
 </head>
 
 <body>
-    <div>
-        <h1>Qchat !</h1>
-        <ul class="message-content"></ul>
-    </div>
+    <form action="/chatroom/chat.html" autocomplete="off">
+        <div>
+            <div>
+                <h1> QChat Web App </h1>
+    
+                <div class="username">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" required>
+                </div>
+    
+                <div class="chatroom">
+                    <label for="chatroom">Chat room</label>
+                    <input type="text" name="chatroom" required>
+                </div>
+            </div>
 
-    <form onsubmit="sendMessage(); return false">
-        <input type="text" name="message">
-        <button type="button" onclick="sendMessage()" autocomplete="off">Send</button>
+            <span>
+                <button type="submit">Join room</button>
+            </span>
+
+        </div>
     </form>
-
 </body>
-<script src="/socket.io/socket.io.js"></script>
-<script src="index.js"> </script>
 
 </html>
