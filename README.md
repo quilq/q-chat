@@ -1,1 +1,1 @@
-q-chat
+Simple chat app using socket.io
